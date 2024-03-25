@@ -3,9 +3,10 @@ import Config
 # Configure your database
 config :task_master, TaskMaster.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "password",
   hostname: "localhost",
   database: "task_master_dev",
+  port: 5433,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10

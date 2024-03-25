@@ -52,6 +52,9 @@ defmodule TaskMasterWeb do
   def live_view do
     quote do
       use Phoenix.LiveView,
+        pattern: "**/*",
+        root: "lib/TaskMasterWeb/live",
+        namespace: TaskMasterWeb,
         layout: {TaskMasterWeb.Layouts, :app}
 
       unquote(html_helpers())
